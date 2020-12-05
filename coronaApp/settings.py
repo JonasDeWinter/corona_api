@@ -25,7 +25,7 @@ SECRET_KEY = '2puovadm4beyk%lo-3w#127ro14l-ozvl&+zho75r9gf7rhp@3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['frozen-atoll-42398.herokuapp.com']
+ALLOWED_HOSTS = ['corona-appli.herokuapp.com']
 
 
 # Application definition
