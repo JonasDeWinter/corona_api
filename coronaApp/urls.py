@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.schemas import get_schema_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('coronagevallen.urls'))
+	path('openapi', get_schema_view(
+        title="coronaApp",
+        description="landen en hun coronaslachtoffers",
+        version="1.0.0"
+    ), name='coronaSchema'),
 ]
